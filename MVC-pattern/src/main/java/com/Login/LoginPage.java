@@ -13,10 +13,9 @@ public class LoginPage extends HttpServlet {
 		String userId= req.getParameter("userId");
 		String pass=req.getParameter("pass");
 		
-		
-		//Default userId and password is admin 
+		Model obj= new Model();
 		PrintWriter pw= res.getWriter();
-		if(userId.equals("admin")&&pass.equals("admin")) {
+		if(obj.Authenticate(userId, pass)) {
 			pw.println("Valid user");
 			pw.println("\n You are welcomed");
 		}
@@ -25,9 +24,6 @@ public class LoginPage extends HttpServlet {
 			pw.println("Are you an intruder????");
 		}
 	}
-	public void doGet(HttpServletRequest req, HttpServletResponse res) {
-		//This does nothing
-		}
 	
 
 }
