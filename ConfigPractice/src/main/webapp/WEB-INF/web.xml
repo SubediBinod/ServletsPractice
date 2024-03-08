@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
   <servlet>
- <servlet-name>Config</servlet-name>
- <servlet-class>com.Config.ConfigContextEx</servlet-class>
- <init-param>
- <param-name>Name</param-name>
- <param-value>Binod</param-value>
- </init-param>
- 
- <init-param>
- <param-name>Address</param-name>
- <param-value>Pharsatikar</param-value>
- </init-param>
-
- 
-<init-param>
- <param-name>Mobile</param-name>
- <param-value>7032858003</param-value>
- </init-param>
+    <servlet-name>Config</servlet-name>
+    <servlet-class>com.Config.ConfigContextEx</servlet-class>
+    <init-param>
+      <param-name>Name</param-name>
+      <param-value>Binod</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Address</param-name>
+      <param-value>Pharsatikar</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Mobile</param-name>
+      <param-value>7032858003</param-value>
+    </init-param>
   </servlet>
- <servlet-mapping>
- <servlet-name>Config</servlet-name>
- <url-pattern>/con</url-pattern>
+  <servlet-mapping>
+    <servlet-name>Config</servlet-name>
+    <url-pattern>/con</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet2</display-name>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>com.cookie.Servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/Servlet2</url-pattern>
   </servlet-mapping>
 </web-app>

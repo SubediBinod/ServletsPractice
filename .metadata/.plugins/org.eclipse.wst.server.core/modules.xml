@@ -4,6 +4,7 @@
   <module moduleId="org.eclipse.jst.jee.server:MVC-pattern" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:ContextConfigEx" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:ConfigPractice" serverId="Tomcat v10.1 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:CookiePractice" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Practice1" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:SimpleUserPass" serverId="Tomcat v10.1 Server at localhost"/>
 </modules>
