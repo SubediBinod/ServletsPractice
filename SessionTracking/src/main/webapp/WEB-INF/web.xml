@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>SessionTracking</display-name>
+  <welcome-file-list>
+     <welcome-file>Sev1</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>com.Cookie.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>com.Cookie.Servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name> Sev1
+  </servlet-name>
+  <servlet-class> com.HttpSession.Sev1
+  </servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>Sev2
+  </servlet-name>
+  <servlet-class>com.HttpSession.Sev2
+  </servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>Sev3
+  </servlet-name>
+  <servlet-class>com.HttpSession.Sev3
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Sev1</servlet-name>
+  <url-pattern>/Sev1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>Sev2</servlet-name>
+  <url-pattern>/Sev2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>Sev3</servlet-name>
+  <url-pattern>/Sev3</url-pattern>
+  </servlet-mapping>
+</web-app>
