@@ -1,3 +1,3 @@
 #Tomcat publish data
-#Sat Mar 09 23:03:31 IST 2024
-org.eclipse.jst.jee.server\:SessionTrackingwithHttpSession=C\:\\Users\\Binod Subedi\\Downloads\\apache-tomcat-10.1.19\\apache-tomcat-10.1.19\\wtpwebapps\\SessionTrackingwithHttpSession
+#Thu Mar 14 22:20:24 IST 2024
+org.eclipse.jst.jee.server\:JDBC-PRACTICE=C\:\\Users\\Binod Subedi\\Downloads\\apache-tomcat-10.1.19\\apache-tomcat-10.1.19\\wtpwebapps\\JDBC-PRACTICE

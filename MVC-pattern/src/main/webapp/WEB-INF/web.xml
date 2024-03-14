@@ -21,27 +21,5 @@
   </servlet-mapping>
   
   
-  <servlet>
-  <servlet-name> Servlet1
-  </servlet-name>
-  <servlet-class> com.HttpSession.Servlet1
-  </servlet-class>
-  </servlet>
-  <servlet>
-  <servlet-name>Servlet2
-  </servlet-name>
-  <servlet-class>com.HttpSession.Servlet2
-  </servlet-class>
-  </servlet>
   
-  <servlet>
-  <servlet-name>Servlet3
-  </servlet-name>
-  <servlet-class>com.HttpSession.Servlet3
-  </servlet-class>
-  </servlet>
-  
-  <servlet-mapping></servlet-mapping>
-  <servlet-mapping></servlet-mapping>
-  <servlet-mapping></servlet-mapping>
 </web-app>
