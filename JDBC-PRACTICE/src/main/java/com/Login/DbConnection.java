@@ -8,10 +8,12 @@ import java.sql.Statement;
  class DbConnection{
 
 	boolean flag=false;
-	boolean CheckPAss(String name,String pass) throws ClassNotFoundException, SQLException {
+	String[] CheckPAss(String name,String pass) throws ClassNotFoundException, SQLException {
 	  
+		
 	    	 Class.forName("com.mysql.cj.jdbc.Driver");
-			 Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/My1","root","root");
+	    	 String arr[]=new String[2];
+			 Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/my1","root","root");
 			 Statement s= con.createStatement();
 			 ResultSet rs = s.executeQuery("SELECT PassWord FROM user WHERE Name = '" + name + "'");
 			 System.out.println("Connection was success");
@@ -19,20 +21,25 @@ import java.sql.Statement;
 				    String passwordFromDB = rs.getString("PassWord");
 				    if (passwordFromDB.equals(pass)) {
 				        // Password matches
+				    	arr[0]=name;
+				    	arr[1]=passwordFromDB;
 				        System.out.println("Password matched!");
-				        flag= true;
+				       
 				    } else {
 				        // Password does not match
+				    	arr[0]=name;
+				    	arr[1]=null;
 				        System.out.println("Password does not match!");
 				        flag= false;
 				    }
 				} else {
 				    // No matching user found
 				    System.out.println("User not found!");
-				    flag=false;
+				    arr[0]=null;
+				    arr[1]=null;
 				}
 
-	        return flag;
+	        return arr;
 	}
 }
  
